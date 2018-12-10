@@ -8,8 +8,8 @@
   "scripts": {
     "clean": "del cjs && del dist",
     "webpack": "webpack",
-    "build:dist": "BABEL_ENV='browser-esm' npm run webpack",
-    "build:cjs": "BABEL_ENV='browser-cjs' babel src --out-dir cjs",
+    "build:dist": "SET BABEL_ENV='browser-esm'&&npm run webpack",
+    "build:cjs": "SET BABEL_ENV='browser-cjs'&&babel src --out-dir cjs",
     "build:flow": "flow-copy-source src cjs",
     "build": "npm run clean && npm run build:dist && npm run build:cjs && npm run build:flow",
     "test:types": "flow check"

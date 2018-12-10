@@ -32,6 +32,11 @@ This project is in alpha, lots of breaking changes are to be expected between re
 ### Prerequisites
 
 - [Node](https://nodejs.org/en/) v10+ (includes npm)
+- Installed git and added to PATH environment variable
+- #### Ubuntu
+  `sudo apt install -y libudev-dev libtool libusb-1.0-0-dev build-essential`
+- #### Windows
+  `npm install --global --production windows-build-tools`
 
 ### Setup
 
